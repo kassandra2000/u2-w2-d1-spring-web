@@ -6,7 +6,6 @@ import java.time.LocalDate;
 
 @Getter
 @Setter
-@AllArgsConstructor
 @NoArgsConstructor
 @ToString
 public class Author {
@@ -16,4 +15,12 @@ public class Author {
     private String email;
     private LocalDate dateOfBirth;
     private String avatar;
+
+    //costruttore
+    public Author(String name, String surname, String email, LocalDate dateOfBirth) {
+        this.name = name;
+        this.surname = surname;
+        this.email = email;
+        this.dateOfBirth = dateOfBirth;
+    }
 }
